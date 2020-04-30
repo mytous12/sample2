@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="grofers-api" />
+        <module name="grofers-db" />
+        <module name="grofers-service" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="Grofer-service" target="1.5" />
+      <module name="Grofers-api" target="1.8" />
+      <module name="Grofers-db" target="1.5" />
+    </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="Grofers-api" options="-parameters" />
+      <module name="grofers" options="-parameters" />
+      <module name="grofers-api" options="-parameters" />
+      <module name="grofers-db" options="-parameters" />
+      <module name="grofers-service" options="-parameters" />
+    </option>
+  </component>
+</project>
